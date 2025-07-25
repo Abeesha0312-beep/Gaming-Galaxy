@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard | Gaming Galaxy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #050505, #0f0f0f);
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .navbar, .footer {
+      background-color: #000;
+    }
+
+    .navbar-brand {
+      color: #00ffcc !important;
+    }
+      .navbar {
+      background-color: #000;
+      box-shadow: 0 0 10px #7f00ff66;
+    }
+     .navbar-nav .nav-link {
+      color: #cfcfff !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #00ffcc44 !important;
+    }
+    .dropdown-menu {
+      background-color: black;
+      border: 1px solid #7f00ff;
+    }
+    .dropdown-item {
+      color: #e0e0ff;
+    }
+    .dropdown-item:hover {
+      background-color: aliceblue;
+      color: #000;
+    }
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .leaderboard-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: rgba(0, 255, 204, 0.05);
+      border: 1px solid #00ffcc;
+      border-radius: 20px;
+      padding: 30px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 20px #00ffcc44;
+    }
+
+    .leaderboard-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    table {
+      width: 100%;
+      color: white;
+    }
+
+    thead {
+      background: #00ffcc33;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+    }
+
+    tbody tr {
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    tbody tr:hover {
+      background-color: #00ffcc22;
+      transform: scale(1.02);
+    }
+
+    .gold {
+      color: #FFD700;
+      text-shadow: 0 0 10px #FFD700;
+    }
+
+    .silver {
+      color: #C0C0C0;
+      text-shadow: 0 0 10px #C0C0C0;
+    }
+
+    .bronze {
+      color: #cd7f32;
+      text-shadow: 0 0 10px #cd7f32;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #00ffcc55;
+      color: #aaa;
+    }
+    footer a {
+      color: #00ffcc55;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: aliceblue;
+    }
+
+    .flag {
+      width: 24px;
+      height: auto;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark px-4 py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand  fw-bold" href="index.html">Gaming Galaxy</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="genres.html">All Genres</a></li>
+            <li><a class="dropdown-item" href="action.html">Action</a></li>
+            <li><a class="dropdown-item" href="rpg.html">RPG</a></li>
+            <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+            <li><a class="dropdown-item" href="shooter.html">Shooter</a></li>
+            <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+            <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+            <li><a class="dropdown-item" href="simulation.html">Simulation</a></li>
+            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+            <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
+          </ul>
+        </li>
+                  <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+           <li><a class="dropdown-item" href="topgames.html">Top Games</a></li>
+              <li><a class="dropdown-item" href="leaderboard.html">Leader Board</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="gamelab.html">Game Lab</a></li>
+              <li><a class="dropdown-item" href="retro.html">Retro</a></li>
+              <li><a class="dropdown-item" href="boss.html">Battle Zone</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="leaderboard-container">
+    <h2 class="leaderboard-title">Top Galaxy Gamers</h2>
+    <table class="table table-dark table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Country</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="gold">
+          <td>🥇 1</td>
+          <td>NovaBlaster</td>
+          <td><img src="images/us.png" class="flag" alt="USA"> USA</td>
+          <td>9800</td>
+        </tr>
+        <tr class="silver">
+          <td>🥈 2</td>
+          <td>PixelHunter</td>
+          <td><img src="images/gb.png" class="flag" alt="UK"> UK</td>
+          <td>9500</td>
+        </tr>
+        <tr class="bronze">
+          <td>🥉 3</td>
+          <td>CodeCrusader</td>
+          <td><img src="images/de.png" class="flag" alt="Germany"> Germany</td>
+          <td>9100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>ShadowNinja</td>
+          <td><img src="images/pk.png" class="flag" alt="Pakistan">Pakistan</td>
+          <td>8700</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>HexaStorm</td>
+          <td><img src="images/ca.png" class="flag" alt="Canada"> Canada</td>
+          <td>8600</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>SkyFury</td>
+          <td><img src="images/au.png" class="flag" alt="Australia"> Australia</td>
+          <td>8400</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<footer>
+  <p>&copy; 2025 Gaming Galaxy. All Rights Reserved.</p>
+  <p>
+    <a href="#">Twitter</a> |
+    <a href="#">YouTube</a> |
+    <a href="#">Discord</a>
+  </p>
+</footer>
+
+</body>
+</html>
+

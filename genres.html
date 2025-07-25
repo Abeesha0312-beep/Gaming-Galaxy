@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Genres - Gaming Galaxy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+    body {
+      background: linear-gradient(to right, #000000, #0c0c0c);
+      color: #ffffff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .navbar {
+      background-color: #000;
+      border-bottom: 2px solid #00ff99;
+    }
+
+    .nav-link, .navbar-brand {
+      color: #00ff99 !important;
+    }
+
+    .nav-link:hover, .navbar-brand:hover {
+      color: #ffffff !important;
+    }
+
+    .dropdown-menu {
+      background-color: #000000;
+      border: 1px solid #00ff99;
+    }
+
+    .dropdown-item {
+      color: #ffffff;
+      transition: all 0.2s ease;
+    }
+
+    .dropdown-item:hover {
+      background-color: #00ff99;
+      color: #000000;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #00ff99;
+      border-bottom: 3px solid #00ff99;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .card {
+      background-color: #111;
+      border: 1px solid #00ff99;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+    }
+
+    .card-title {
+      color: #00ff99;
+    }
+
+    footer {
+      border-top: 1px solid rgba(0, 255, 153, 0.5);
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    .socials a {
+      color: #00ff99;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+     .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+
+    .dropdown-menu {
+      background-color: #222;
+      border: none;
+    }
+
+    .dropdown-item {
+      color: #ccc;
+    }
+
+    .dropdown-item:hover {
+      background-color: #111;
+      color: #00ff99;
+    }
+
+  </style>
+  <nav class="navbar navbar-expand-lg px-4 py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">Gaming Galaxy</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Genres</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="genres.html">All Genres</a></li>
+              <li><a class="dropdown-item" href="action.html">Action</a></li>
+              <li><a class="dropdown-item" href="rpg.html">RPG</a></li>
+              <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+              <li><a class="dropdown-item" href="shooter.html">Shooter</a></li>
+              <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+              <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+              <li><a class="dropdown-item" href="simulation.html">Simulation</a></li>
+              <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+              <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Explore</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="topgames.html">Top Games</a></li>
+              <li><a class="dropdown-item" href="leaderboard.html">Leader Board</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="gamelab.html">Game Lab</a></li>
+              <li><a class="dropdown-item" href="retro.html">Retro</a></li>
+              <li><a class="dropdown-item" href="boss.html">Battle Zone</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section class="py-5 bg-black text-light">
+    <div class="container">
+      <h2 class="text-success fw-bold text-center mb-5">Explore Game Genres</h2>
+      <div class="row g-4">
+
+<div class="col-md-4">
+  <a href="action.html" class="text-decoration-none">
+    <div class="card h-100 bg-dark text-light border-success shadow">
+      <img src="images/action.jpg" class="card-img-top" alt="Action Games">
+      <div class="card-body">
+        <h5 class="card-title text-success">Action</h5>
+        <p class="card-text">Fast-paced, intense gameplay packed with challenges and adventure.</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+        <div class="col-md-4">
+          <a href="RPG.html" class="text-decoration-none">
+          <div class="card h-100 bg-dark text-light border-success shadow">
+            <img src="images/rpg.jpg" class="card-img-top" alt="RPG Games">
+            <div class="card-body">
+              <h5 class="card-title text-success">RPG</h5>
+              <p class="card-text">Dive into immersive worlds and build your character in epic role-playing adventures.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+<div class="col-md-4">
+          <a href="shooter.html" class="text-decoration-none">
+  <div class="card h-100 bg-dark text-light border-success shadow">
+    <img src="images/shooter.jpg" class="card-img-top" alt="Shooter Games">
+    <div class="card-body">
+      <h5 class="card-title text-success">Shooter</h5>
+      <p class="card-text">Test your reflexes in thrilling first-person and third-person shooter games.</p>
+    </div>
+  </div>
+</a>
+</div>
+
+<div class="col-md-4">
+   <a href="horror.html" class="text-decoration-none">
+  <div class="card h-100 bg-dark text-light border-success shadow">
+    <img src="images/horror.jpg" class="card-img-top" alt="Horror Games">
+    <div class="card-body">
+      <h5 class="card-title text-success">Horror</h5>
+      <p class="card-text">Enter dark worlds filled with fear, survival, and the unknown.</p>
+    </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-md-4">
+  <a href="puzzle.html" class="text-decoration-none">
+  <div class="card h-100 bg-dark text-light border-success shadow">
+    <img src="images/puzzle.jpg" class="card-img-top" alt="Puzzle Games">
+    <div class="card-body">
+      <h5 class="card-title text-success">Puzzle</h5>
+      <p class="card-text">Challenge your brain with creative and clever puzzles.</p>
+    </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-md-4">
+  <a href="simulation.html" class="text-decoration-none">
+  <div class="card h-100 bg-dark text-light border-success shadow">
+    <img src="images/simulation.jpg" class="card-img-top" alt="Simulation Games">
+    <div class="card-body">
+      <h5 class="card-title text-success">Simulation</h5>
+      <p class="card-text">Experience real-world mechanics like farming, flying, and building.</p>
+    </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-md-4">
+  <a href="adventure.html" class="text-decoration-none">
+  <div class="card h-100 bg-dark text-light border-success shadow">
+    <img src="images/adventure.jpg" class="card-img-top" alt="Adventure Games">
+    <div class="card-body">
+      <h5 class="card-title text-success">Adventure</h5>
+      <p class="card-text">Embark on epic journeys filled with quests and storytelling.</p>
+    </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-md-4">
+  <a href="strategy.html" class="text-decoration-none">
+  <div class="card h-100 bg-dark text-light border-success shadow">
+    <img src="images/strategy.jpg" class="card-img-top" alt="Strategy Games">
+    <div class="card-body">
+      <h5 class="card-title text-success">Strategy</h5>
+      <p class="card-text">Plan, build, and dominate in tactical and strategic environments.</p>
+    </div>
+  </div>
+  </a>
+</div>
+
+        <div class="col-md-4">
+          <a href="racing.html" class="text-decoration-none">
+          <div class="card h-100 bg-dark text-light border-success shadow">
+            <img src="images/racing.jpg" class="card-img-top" alt="Racing Games">
+            <div class="card-body">
+              <h5 class="card-title text-success">Racing</h5>
+              <p class="card-text">Get behind the wheel and experience the thrill of speed and competition.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+  </section>
+
+  <footer class="footer mt-4">
+    <p class="mb-1">&copy; 2025 Gaming Galaxy. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Twitter</a> |
+      <a href="#">YouTube</a> |
+      <a href="#">Discord</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

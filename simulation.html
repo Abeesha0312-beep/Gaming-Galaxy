@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulation Games - Gaming Galaxy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    header {
+      height: 300px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                  url('images/simulation-bg.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: aliceblue;
+      font-family: 20px;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.5rem;
+    }
+
+    .card {
+      background-color: #111;
+      border: 2px solid transparent;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #00fff7;
+      box-shadow: 0 0 15px #008080;
+      transform: translateY(-6px);
+    }
+
+    .card-title {
+      color: #008080;
+    }
+
+    .navbar {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .navbar .nav-link {
+      color: #fff;
+    }
+
+    .navbar .nav-link:hover,
+    .dropdown-item:hover {
+      color: #008080;
+    }
+
+    .dropdown-menu {
+      background-color: #111;
+    }
+
+    .dropdown-item {
+      color: #fff;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid#00fff7;
+    }
+
+    footer a {
+      color:  #008080 ;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark px-4 py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand  fw-bold" href="index.html" style="color: #00fff7;">Gaming Galaxy</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="genres.html">All Genres</a></li>
+            <li><a class="dropdown-item" href="action.html">Action</a></li>
+            <li><a class="dropdown-item" href="rpg.html">RPG</a></li>
+            <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+            <li><a class="dropdown-item" href="shooter.html">Shooter</a></li>
+            <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+            <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+            <li><a class="dropdown-item" href="simulation.html">Simulation</a></li>
+            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+            <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
+          </ul>
+        </li>
+                  <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+           <li><a class="dropdown-item" href="topgames.html">Top Games</a></li>
+              <li><a class="dropdown-item" href="leaderboard.html">Leader Board</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="gamelab.html">Game Lab</a></li>
+              <li><a class="dropdown-item" href="retro.html">Retro</a></li>
+              <li><a class="dropdown-item" href="boss.html">Battle Zone</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <h1>Simulation Games</h1>
+  <p>Take the wheel of life</p>
+</header>
+<section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="https://zelda.nintendo.com/breath-of-the-wild/" target="_blank" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="images/zelda.jpg" class="card-img-top" alt="Zelda: Breath of the Wild">
+              <div class="card-body">
+                <h5 class="card-title">Zelda: BOTW</h5>
+                <p class="card-text text-light">Embark on a journey through the mystical kingdom of Hyrule.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://tunicgame.com/" target="_blank" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="images/tunic.jpg" class="card-img-top" alt="Tunic">
+              <div class="card-body">
+                <h5 class="card-title">Tunic</h5>
+                <p class="card-text text-light">A cute fox with a sword explores a world of secrets and challenges.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+           <div class="col-md-4">
+          <a href="https://www.flightsimulator.com/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/flight.jpg" class="card-img-top" alt="Flight Simulator">
+              <div class="card-body">
+                <h5 class="card-title">Microsoft Flight Simulator</h5>
+                <p class="card-text text-light">Ultra-realistic flight experience across the globe.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.ea.com/games/the-sims/the-sims-4" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/sims.jpg" class="card-img-top" alt="The Sims 4">
+              <div class="card-body">
+                <h5 class="card-title">The Sims 4</h5>
+                <p class="card-text text-light">Build lives, relationships, and homes in this iconic sim.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.paradoxinteractive.com/games/cities-skylines/about" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/cities.jpg" class="card-img-top" alt="Cities Skylines">
+              <div class="card-body">
+                <h5 class="card-title">Cities: Skylines</h5>
+                <p class="card-text text-light">Design and manage your dream city with rich details.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://eurotrucksimulator2.com/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/truck.jpg" class="card-img-top" alt="Euro Truck Simulator 2">
+              <div class="card-body">
+                <h5 class="card-title">Euro Truck Simulator 2</h5>
+                <p class="card-text text-light">Drive long-haul trucks across Europe with realism.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.farming-simulator.com/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/farming.jpg" class="card-img-top" alt="Farming Simulator 22">
+              <div class="card-body">
+                <h5 class="card-title">Farming Simulator 22</h5>
+                <p class="card-text text-light">Grow crops, raise animals, and manage a modern farm.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.planetzoogame.com/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/zoo.jpg" class="card-img-top" alt="Planet Zoo">
+              <div class="card-body">
+                <h5 class="card-title">Planet Zoo</h5>
+                <p class="card-text text-light">Build and manage a zoo full of lifelike animals.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<footer class="footer mt-5">
+  <p class="mb-1">&copy; 2025 Gaming Galaxy. All rights reserved.</p>
+  <div class="socials">
+    <a href="#">Twitter</a> |
+    <a href="#">YouTube</a> |
+    <a href="#">Discord</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

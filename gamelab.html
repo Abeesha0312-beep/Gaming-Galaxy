@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Lab | Gaming Galaxy</title>
+  <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .navbar {
+      background-color: #000;
+      box-shadow: 0 0 10px #7f00ff66;
+    }
+    .navbar-brand {
+      color: #00ffe7 !important;
+    }
+    .navbar-nav .nav-link {
+      color: #cfcfff !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #00ffe1 !important;
+    }
+    .dropdown-menu {
+      background-color: #1b0030;
+      border: 1px solid #7f00ff;
+    }
+    .dropdown-item {
+      color: #e0e0ff;
+    }
+    .dropdown-item:hover {
+      background-color: #00ffe1;
+      color: #000;
+    }
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .lab-section {
+      padding: 60px 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      color: #00ffe1;
+    }
+    .form-control,
+    .form-select {
+      background-color: #18002b;
+      color: #fff;
+      border: 1px solid #7f00ff;
+      box-shadow: 0 0 5px #7f00ff66;
+    }
+    .btn-custom {
+      background-color: #00ffe7;
+      color: #000;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: #00bfa6;
+    }
+    .preview-card {
+      background-color: #1e0033;
+      border: 2px dashed #00ffe1;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ffe1;
+    }
+    @media (max-width: 576px) {
+      .lab-section {
+        padding: 30px 10px;
+      }
+      .preview-card {
+        padding: 15px;
+      }
+    }
+    #preview {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    footer {
+      background-color: #120025;
+      color: #cfcfff;
+      padding: 30px 0;
+      text-align: center;
+      border-top: 2px solid #00ffe1;
+    }
+    footer a {
+      color: #00ffe1;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ff00cc;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-dark px-4 py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand  fw-bold" href="index.html">Gaming Galaxy</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="genres.html">All Genres</a></li>
+            <li><a class="dropdown-item" href="action.html">Action</a></li>
+            <li><a class="dropdown-item" href="rpg.html">RPG</a></li>
+            <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+            <li><a class="dropdown-item" href="shooter.html">Shooter</a></li>
+            <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+            <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+            <li><a class="dropdown-item" href="simulation.html">Simulation</a></li>
+            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+            <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
+          </ul>
+        </li>
+                  <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+           <li><a class="dropdown-item" href="topgames.html">Top Games</a></li>
+              <li><a class="dropdown-item" href="leaderboard.html">Leader Board</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="gamelab.html">Game Lab</a></li>
+              <li><a class="dropdown-item" href="retro.html">Retro</a></li>
+              <li><a class="dropdown-item" href="boss.html">Battle Zone</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="lab-section container">
+  <div class="container text-center mt-5">
+    <h1 class="mb-4">🔬 Welcome to Game Lab</h1>
+    <p class="mb-4">Mix & Match your perfect game idea. Select the genre, environment, protagonist, and difficulty!</p>
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <label class="form-label">Genre</label>
+        <select class="form-select" id="genre">
+          <option>Action</option>
+          <option>RPG</option>
+          <option>Horror</option>
+          <option>Puzzle</option>
+          <option>Simulation</option>
+          <option>Adventure</option>
+          <option>Strategy</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Environment</label>
+        <select class="form-select" id="environment">
+          <option>Jungle</option>
+          <option>Desert</option>
+          <option>City</option>
+          <option>Underwater</option>
+          <option>Space</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Protagonist</label>
+        <select class="form-select" id="hero">
+          <option>Robot</option>
+          <option>Female</option>
+          <option>Soldier</option>
+          <option>Alien</option>
+          <option>Detective</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Difficulty</label>
+        <select class="form-select" id="difficulty">
+          <option>Easy</option>
+          <option>Normal</option>
+          <option>Hard</option>
+          <option>Extreme</option>
+        </select>
+      </div>
+    </div>
+    <button onclick="generateGame()" class="btn btn-custom mt-4">Create Your Game Card</button>
+    <div id="preview" class="preview-card mt-4" style="display:none;"></div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Gaming Galaxy. All Rights Reserved.</p>
+  <p>
+    <a href="#">Twitter</a> |
+    <a href="#">YouTube</a> |
+    <a href="#">Discord</a>
+  </p>
+</footer>
+
+<script>
+  function generateGame() {
+    const genre = document.getElementById("genre").value;
+    const environment = document.getElementById("environment").value;
+    const hero = document.getElementById("hero").value;
+    const difficulty = document.getElementById("difficulty").value;
+
+    const adjectives = ['Cyber', 'Pixel', 'Shadow', 'Phantom', 'Neon'];
+    const nouns = ['Strike', 'Vortex', 'Saga', 'Echo', 'Blitz'];
+
+    const gameName = adjectives[Math.floor(Math.random() * adjectives.length)] + ' ' +
+                     nouns[Math.floor(Math.random() * nouns.length)];
+
+    const output = `
+      <h3><i class="bi bi-controller"></i> ${gameName}</h3>
+      <p><strong>Genre:</strong> ${genre}</p>
+      <p><strong>Environment:</strong> ${environment}</p>
+      <p><strong>Protagonist:</strong> ${hero}</p>
+      <p><strong>Difficulty:</strong> ${difficulty}</p>
+      <p class="mt-3">Embark on a ${difficulty.toLowerCase()} ${genre.toLowerCase()} adventure in a ${environment.toLowerCase()} world as a brave ${hero.toLowerCase()}!</p>
+    `;
+
+    document.getElementById("preview").innerHTML = output;
+    document.getElementById("preview").style.display = "block";
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

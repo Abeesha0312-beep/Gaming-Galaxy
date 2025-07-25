@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boss Battle Zone | Gaming Galaxy</title>
+  <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0b0b0b;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .navbar .nav-link {
+      color: #fff;
+    }
+
+    .navbar .nav-link:hover,
+    .dropdown-item:hover {
+      color: #ff4d4d;
+    }
+
+    .dropdown-menu {
+      background-color: #111;
+    }
+
+    .dropdown-item {
+      color: #fff;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .hero-section {
+      background: linear-gradient(to right, #1c1c1c, #000);
+      padding: 60px 20px;
+      text-align: center;
+      color: #ff3c3c;
+      text-shadow: 0 0 10px red;
+    }
+
+    .boss-card {
+      background-color: #1a1a1a;
+      border: 2px solid #ff3c3c;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px #ff3c3c33;
+    }
+
+    .boss-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px red, 0 0 40px red;
+      border-color: #ff5555;
+    }
+
+    .boss-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 2px solid #ff3c3c;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .difficulty {
+      color: #ff3c3c;
+      font-weight: bold;
+    }
+footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #ff4d4d;
+    }
+
+    footer a {
+      color: #ff4d4d;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg px-4 py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html" style="color: #ff4d4d;">Gaming Galaxy</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Genres</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="genres.html">All Genres</a></li>
+            <li><a class="dropdown-item" href="action.html">Action</a></li>
+            <li><a class="dropdown-item" href="rpg.html">RPG</a></li>
+            <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+            <li><a class="dropdown-item" href="shooter.html">Shooter</a></li>
+            <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+            <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+            <li><a class="dropdown-item" href="simulation.html">Simulation</a></li>
+            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+            <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="topgames.html">Top Games</a></li>
+            <li><a class="dropdown-item" href="leaderboard.html">Leader Board</a></li>
+            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+            <li><a class="dropdown-item" href="gamelab.html">Game Lab</a></li>
+            <li><a class="dropdown-item" href="retro.html">Retro</a></li>
+            <li><a class="dropdown-item" href="boss.html">Battle Zone</a></li>
+          </ul>
+        </li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <section class="hero-section">
+    <h1>Boss Battle Zone</h1>
+    <p>Face the fiercest foes in gaming history. Do you have what it takes?</p>
+  </section>
+
+  <div class="container my-5">
+    <div class="row g-4">
+
+
+      <div class="col-md-4">
+        <div class="boss-card">
+          <img src="images/boss1.jpg" alt="Darkeater Midir" class="boss-img">
+          <div class="card-body">
+            <h5>Darkeater Midir</h5>
+            <p class="difficulty">⚔️ Difficulty: 9/10</p>
+            <p>Dodge tail swipes, stay under belly, and use lightning.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="boss-card">
+          <img src="images/godofwar.jpg" alt="Sigrun" class="boss-img">
+          <div class="card-body">
+            <h5>Sigrun</h5>
+            <p class="difficulty">⚔️ Difficulty: 10/10</p>
+            <p>Time dodges perfectly, learn her combos, stay relentless.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="boss-card">
+          <img src="images/boss3.jpg" alt="Maliketh" class="boss-img">
+          <div class="card-body">
+            <h5>Maliketh</h5>
+            <p class="difficulty">⚔️ Difficulty: 8.5/10</p>
+            <p>Use pillars for cover, punish his openings, watch bleed.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="boss-card">
+          <img src="images/boss4.jpg" alt="Isshin" class="boss-img">
+          <div class="card-body">
+            <h5>Isshin, the Sword Saint</h5>
+            <p class="difficulty">⚔️ Difficulty: 9.5/10</p>
+            <p>Perfect parries & posture damage are key to victory.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="boss-card">
+          <img src="images/boss5.jpg" alt="Sans" class="boss-img">
+          <div class="card-body">
+            <h5>Sans</h5>
+            <p class="difficulty">⚔️ Difficulty: 10/10</p>
+            <p>Patience and precision are the only way through.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="boss-card">
+          <img src="images/residentevil.jpg" alt="Nemesis" class="boss-img">
+          <div class="card-body">
+            <h5>Nemesis</h5>
+            <p class="difficulty">⚔️ Difficulty: 8/10</p>
+            <p>Keep moving, avoid tentacle grabs, and don’t panic!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<footer>
+  <p>&copy; 2025 Gaming Galaxy. All Rights Reserved.</p>
+  <p>
+    <a href="#">Twitter</a> |
+    <a href="#">YouTube</a> |
+    <a href="#">Discord</a>
+  </p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

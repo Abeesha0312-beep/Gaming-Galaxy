@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puzzle Games - Gaming Galaxy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #111;
+    }
+    .navbar .nav-link, .navbar-brand {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .navbar .navbar-brand {
+      color: #ff66cc !important;
+    }
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      background-color: #222;
+    }
+    .dropdown-item:hover {
+      background-color: #663366;
+      color: #fff;
+    }
+
+    header.genre-header {
+      height: 300px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url('images/puzzle-bg.jpg') center/cover no-repeat;
+      position: relative;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+    }
+
+    header.genre-header h1 {
+      font-size: 3rem;
+      color: aliceblue;
+    }
+    header.genre-header p {
+      font-size: 1.25rem;
+      color: #ccc;
+    }
+
+    .card {
+      background-color: #111;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #ff99cc;
+      box-shadow: 0 0 15px #ff99cc;
+    }
+    .card-title {
+      color: #ff99cc;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 25px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #ff99cc;
+    }
+    footer a {
+      color: #ff99cc;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark px-4 py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand text-danger fw-bold" href="index.html">Gaming Galaxy</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="genres.html">All Genres</a></li>
+            <li><a class="dropdown-item" href="action.html">Action</a></li>
+            <li><a class="dropdown-item" href="rpg.html">RPG</a></li>
+            <li><a class="dropdown-item" href="racing.html">Racing</a></li>
+            <li><a class="dropdown-item" href="shooter.html">Shooter</a></li>
+            <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+            <li><a class="dropdown-item" href="puzzle.html">Puzzle</a></li>
+            <li><a class="dropdown-item" href="simulation.html">Simulation</a></li>
+            <li><a class="dropdown-item" href="adventure.html">Adventure</a></li>
+            <li><a class="dropdown-item" href="strategy.html">Strategy</a></li>
+          </ul>
+        </li>
+                  <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+           <li><a class="dropdown-item" href="topgames.html">Top Games</a></li>
+              <li><a class="dropdown-item" href="leaderboard.html">Leader Board</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="gamelab.html">Game Lab</a></li>
+              <li><a class="dropdown-item" href="retro.html">Retro</a></li>
+              <li><a class="dropdown-item" href="boss.html">Battle Zone</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="genre-header">
+  <h1>Puzzle Games</h1>
+  <p>Solve your way through brain-bending fun.</p>
+</header>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+              <div class="col-md-4">
+          <a href="https://store.steampowered.com/app/466630/The_Pedestrian/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/pedestrian.jpg" class="card-img-top" alt="The Pedestrian">
+              <div class="card-body">
+                <h5 class="card-title text-pink">The Pedestrian</h5>
+                <p class="card-text text-light">Navigate public signage to solve clever platform puzzles in this beautifully animated game.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.fireproofgames.com/games/the-room" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/theroom.jpg" class="card-img-top" alt="The Room">
+              <div class="card-body">
+                <h5 class="card-title text-pink">The Room</h5>
+                <p class="card-text text-light">Explore intricately designed puzzle boxes filled with mystery and hidden secrets.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://store.steampowered.com/app/736260/Baba_Is_You/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/baba.jpg" class="card-img-top" alt="Baba Is You">
+              <div class="card-body">
+                <h5 class="card-title text-pink">Baba Is You</h5>
+                <p class="card-text text-light">Change the rules of the game to solve logic puzzles in this award-winning indie masterpiece.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://store.epicgames.com/en-US/p/the-witness" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/witness.jpg" class="card-img-top" alt="The Witness">
+              <div class="card-body">
+                <h5 class="card-title text-pink">The Witness</h5>
+                <p class="card-text text-light">Explore a mysterious island full of intricate puzzles that test logic, vision, and memory.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://store.steampowered.com/app/620/Portal_2/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/portal.jpg" class="card-img-top" alt="Portal 2">
+              <div class="card-body">
+                <h5 class="card-title text-pink">Portal 2</h5>
+                <p class="card-text text-light">Use portals and physics to escape a high-tech testing facility in this iconic puzzle adventure.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.monumentvalleygame.com/" target="_blank" class="text-decoration-none">
+            <div class="card bg-dark h-100">
+              <img src="images/monument.jpg" class="card-img-top" alt="Monument Valley">
+              <div class="card-body">
+                <h5 class="card-title text-pink">Monument Valley</h5>
+                <p class="card-text text-light">Guide a silent princess through impossible architecture and serene puzzlescapes.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer mt-5">
+  <p>&copy; 2025 Gaming Galaxy. All rights reserved.</p>
+  <div>
+    <a href="#">Twitter</a> |
+    <a href="#">YouTube</a> |
+    <a href="#">Discord</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
